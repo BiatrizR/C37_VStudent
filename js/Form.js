@@ -7,20 +7,15 @@ class Form {
   }
 
   setElementsPosition() {
-    this.titleImg.position(100, 80);
-    this.titleImg.size(800,100)
-    this.input.position(width / 2 - 110, height / 2 - 50);
-    this.playButton.position(width / 2 - 90, height / 2 - 20);
-    this.greeting.position(width / 2 - 300, height / 2 - 100);
+   //exibir pcriar elementos do form e exibir posições
   }
 
 
   hide() {
-    this.greeting.hide();
-    this.playButton.hide();
-    this.input.hide();
+   //ocultar
   }
 
+  //exibir mensagem ao pressionar o botão de play
   handleMousePressed() {
       this.playButton.mousePressed(() => {
       this.input.hide();
@@ -29,19 +24,16 @@ class Form {
       Olá ${this.input.value()}
       </br>espere outro jogador entrar...`;
       this.greeting.html(message);
-      //6 aumente o playerCount e atualize o novo valor
+      //aumente o playerCount e atualize o novo valor
       // utilizando a função update.
-      playerCount += 1;
-      player.name = this.input.value();
-      player.index = playerCount;
-      player.updateCount(playerCount);
+    
 
     });
   }
-
+//chamar as funções para serem exibidas
   display() {
-   this.setElementsPosition();
+  // this.setElementsPosition();
     //this.setElementsStyle();
-    this.handleMousePressed();
+   // this.handleMousePressed();
   }
 }
