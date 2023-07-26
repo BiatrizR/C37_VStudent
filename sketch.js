@@ -26,14 +26,8 @@ function setup() {
 function draw() {
   background(bgImg);
   // atualize estado do jogo
- //7 CRIAR CONDIÇÃO PARA INICIAR SE OUVER 2 JOGADORES
- if(playerCount ===2){
-  game.update(1);
- }
-  if (gameState === 1) {
-    game.play();
-  }
-}
+ // CRIAR CONDIÇÃO PARA INICIAR SE OUVER 2 JOGADORES
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
