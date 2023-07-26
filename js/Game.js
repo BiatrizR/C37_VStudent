@@ -2,9 +2,7 @@ class Game {
   constructor() {}
 
   getState() {
-    var gameStateRef = database.ref("gameState");
-    gameStateRef.on("value", function (data) {
-      gameState = data.val();
+   //CONECTAR BD
     });
   }
 
@@ -19,19 +17,17 @@ class Game {
   start() {
     player = new Player();
     //Chamar player count
-    playerCount = player.getCount();
+   //chamar form e display
 
-    form = new Form();
-    form.display();
-//sprites
+   
+//SPRITES CARRO
     //car1 = createSprite(width / 2 - 50, height - 100);
-    // car1.addImage("car1", car1_img);
-    // car1.scale = 0.07;
+    //add imagem e scale
 
     // car2 = createSprite(width / 2 + 100, height - 100);
-    // car2.addImage("car2", car2_img);
-    // car2.scale = 0.07;
+     //add imagem e scale
 
+    //Variavel de matriz
     // cars = [car1, car2];
   }
 
